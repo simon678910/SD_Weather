@@ -1,6 +1,13 @@
+body{
+	text-align: center;
+}
 table {
 	border: 1px solid;
 	border-radius: 5px;
 	box-shadow: 1px 1px 1px 1px #888888;
-
+	display: inline-block;
+	border-collapse: collapse;
+}
+td, th:not(:first-child){
+	border-left: 1px solid black;
 }
