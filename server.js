@@ -12,8 +12,10 @@ app.use(express.static('public'));
 app.get('/',function(req, res){
 	request(url, function(err, response, body){		
 		var data = JSON.parse(body);
-		res.send(data);
-
+//		for(i = 0; i < data.list.length; i++){
+//			console.log(data.list[i]);
+//		}
+		res.send(data.city.name);
 	});
 })
 
