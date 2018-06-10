@@ -8,6 +8,11 @@ table {
 	display: inline-block;
 	border-collapse: collapse;
 }
+
 td, th:not(:first-child){
 	border-left: 1px solid black;
+}
+
+table tr:nth-child(2) th::first-letter{
+	text-transform: uppercase;
 }
